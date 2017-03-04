@@ -1,6 +1,6 @@
 # clearify
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](tonidominguez@me.com)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/tonidominguez)
 
 Clear and beautiful theme
 
