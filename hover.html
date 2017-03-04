@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/hover/css/hover-min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Clearify Theme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div w3-include-html="inc/menu.html"></div>
+      <div class="page-wrapper">
+        <div w3-include-html="inc/header.html"></div>
+        <div class="clarify-body">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <a class="active">Hover</a>
+          </nav>
+         <div id="effects" class="effects">
+
+        <h2>2D Transitions</h2>
+        <div class="box-panel">
+          <a href="#" class="btn btn-primary hvr-grow">Grow</a>
+          <a href="#" class="btn btn-success hvr-shrink">Shrink</a>
+          <a href="#" class="btn btn-warning hvr-pulse">Pulse</a>
+          <a href="#" class="btn btn-info hvr-pulse-grow">Pulse Grow</a>
+          <a href="#" class="btn btn-danger hvr-pulse-shrink">Pulse Shrink</a>
+          <a href="#" class="btn btn-primary hvr-push">Push</a>
+          <a href="#" class="btn btn-success hvr-pop">Pop</a>
+          <a href="#" class="btn btn-warning hvr-bounce-in">Bounce In</a>
+          <a href="#" class="btn btn-info hvr-bounce-out">Bounce Out</a>
+          <a href="#" class="btn btn-danger hvr-rotate">Rotate</a>
+          <a href="#" class="btn btn-primary hvr-grow-rotate">Grow Rotate</a>
+          <a href="#" class="btn btn-success hvr-float">Float</a>
+          <a href="#" class="btn btn-warning hvr-sink">Sink</a>
+          <a href="#" class="btn btn-info hvr-bob">Bob</a>
+          <a href="#" class="btn btn-danger hvr-hang">Hang</a>
+          <a href="#" class="btn btn-primary hvr-skew">Skew</a>
+          <a href="#" class="btn btn-success hvr-skew-forward">Skew Forward</a>
+          <a href="#" class="btn btn-warning hvr-skew-backward">Skew Backward</a>
+          <a href="#" class="btn btn-info hvr-wobble-horizontal">Wobble Horizontal</a>
+          <a href="#" class="btn btn-danger hvr-wobble-vertical">Wobble Vertical</a>
+          <a href="#" class="btn btn-primary hvr-wobble-to-bottom-right">Wobble To Bottom Right</a>
+          <a href="#" class="btn btn-success hvr-wobble-to-top-right">Wobble To Top Right</a>
+          <a href="#" class="btn btn-warning hvr-wobble-top">Wobble Top</a>
+          <a href="#" class="btn btn-info hvr-wobble-bottom">Wobble Bottom</a>
+          <a href="#" class="btn btn-danger hvr-wobble-skew">Wobble Skew</a>
+          <a href="#" class="btn btn-primary hvr-buzz">Buzz</a>
+          <a href="#" class="btn btn-success hvr-buzz-out">Buzz Out</a>
+        </div>
+
+        <h2>Background Transitions</h2>
+        <div class="box-panel">
+        <a href="#" class="btn btn-primary btn-outline hvr-fade">Fade</a>
+        <a href="#" class="btn btn-success btn-outline hvr-back-pulse">Back Pulse</a>
+        <a href="#" class="btn btn-warning btn-outline hvr-sweep-to-right">Sweep To Right</a>
+        <a href="#" class="btn btn-info btn-outline hvr-sweep-to-left">Sweep To Left</a>
+        <a href="#" class="btn btn-danger btn-outline hvr-sweep-to-bottom">Sweep To Bottom</a>
+        <a href="#" class="btn btn-primary btn-outline hvr-sweep-to-top">Sweep To Top</a>
+        <a href="#" class="btn btn-success btn-outline hvr-bounce-to-right">Bounce To Right</a>
+        <a href="#" class="btn btn-warning btn-outline hvr-bounce-to-left">Bounce To Left</a>
+        <a href="#" class="btn btn-info btn-outline hvr-bounce-to-bottom">Bounce To Bottom</a>
+        <a href="#" class="btn btn-danger btn-outline hvr-bounce-to-top">Bounce To Top</a>
+        <a href="#" class="btn btn-primary btn-outline hvr-radial-out">Radial Out</a>
+        <a href="#" class="btn btn-success btn-outline hvr-radial-in">Radial In</a>
+        <a href="#" class="btn btn-warning btn-outline hvr-rectangle-in">Rectangle In</a>
+        <a href="#" class="btn btn-info btn-outline hvr-rectangle-out">Rectangle Out</a>
+        <a href="#" class="btn btn-danger btn-outline hvr-shutter-in-horizontal">Shutter In Horizontal</a>
+        <a href="#" class="btn btn-primary btn-outline hvr-shutter-out-horizontal">Shutter Out Horizontal</a>
+        <a href="#" class="btn btn-success btn-outline hvr-shutter-in-vertical">Shutter In Vertical</a>
+        <a href="#" class="btn btn-warning btn-outline hvr-shutter-out-vertical">Shutter Out Vertical</a>
+        </div>
+
+        <h2>Border Transitions</h2>
+        <div class="box-panel">
+        <a href="#" class="btn btn-primary hvr-underline-from-left">Underline From Left</a>
+        <a href="#" class="btn btn-success hvr-underline-from-center">Underline From Center</a>
+        <a href="#" class="btn btn-warning hvr-underline-from-right">Underline From Right</a>
+        <a href="#" class="btn btn-info hvr-reveal">Reveal</a>
+        <a href="#" class="btn btn-danger hvr-underline-reveal">Underline Reveal</a>
+        <a href="#" class="btn btn-primary hvr-overline-reveal">Overline Reveal</a>
+        <a href="#" class="btn btn-success hvr-overline-from-left">Overline From Left</a>
+        <a href="#" class="btn btn-warning hvr-overline-from-center">Overline From Center</a>
+        <a href="#" class="btn btn-info hvr-overline-from-right">Overline From Right</a>
+        </div>
+
+        <h2>Shadow and Glow Transitions</h2>
+        <div class="box-panel">
+        <a href="#" class="btn btn-primary btn-outline hvr-shadow">Shadow</a>
+        <a href="#" class="btn btn-success btn-outline hvr-grow-shadow">Grow Shadow</a>
+        <a href="#" class="btn btn-warning btn-outline hvr-float-shadow">Float Shadow</a>
+        <a href="#" class="btn btn-info btn-outline hvr-glow">Glow</a>
+        <a href="#" class="btn btn-danger btn-outline hvr-shadow-radial">Shadow Radial</a>
+        <a href="#" class="btn btn-primary btn-outline hvr-box-shadow-outset">Box Shadow Outset</a>
+        <a href="#" class="btn btn-success btn-outline hvr-box-shadow-inset">Box Shadow Inset</a>
+        </div>
+
+        <h2>Curls</h2>
+        <div class="box-panel">
+        <a href="#" class="btn btn-default hvr-curl-top-left">Curl Top Left</a>
+        <a href="#" class="btn btn-default hvr-curl-top-right">Curl Top Right</a>
+        <a href="#" class="btn btn-default hvr-curl-bottom-right">Curl Bottom Right</a>
+        <a href="#" class="btn btn-default hvr-curl-bottom-left">Curl Bottom Left</a>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- BOWER -->
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/moment/moment.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/fullcalendar/dist/fullcalendar.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="js/lib/peity/jquery.peity.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/peity-data.js"></script>
+
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script>
+$(document).on('ready',function(){
+w3IncludeHTML();
+})
+</script>
+</body>
+</html>

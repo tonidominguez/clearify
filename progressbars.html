@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Clearify Theme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div w3-include-html="inc/menu.html"></div>
+      <div class="page-wrapper">
+        <div w3-include-html="inc/header.html"></div>
+        <div class="clarify-body">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <a class="active">Progress Bars</a>
+          </nav>
+          <div class="row">
+          <div class="col-lg-12 col-xs-12">
+            <div class="box-panel selected-box-bordered">
+              <h3>Horizontal bar example</h3>
+              <br>
+              
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">70% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;"> <span class="sr-only">38% Complete</span> </div>
+              </div>
+ 
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"> <span class="sr-only">95% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"> <span class="sr-only">50% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"> <span class="sr-only">30% Complete</span> </div>
+              </div>
+              <div hljs hljs-language="javascript" id="panel-tabs-js"><div class="progress"><br><div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"> <span class="sr-only">50% Complete</span></div><br></div></div>
+              
+            </div>
+          </div>
+          <div class="col-lg-12 col-xs-12">
+            <div class="box-panel selected-box-bordered">
+              <h3>Horizontal bar with Animation</h3>
+              <br>
+     
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">70% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;"> <span class="sr-only">38% Complete</span> </div>
+              </div>
+ 
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"> <span class="sr-only">95% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"> <span class="sr-only">50% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"> <span class="sr-only">30% Complete</span> </div>
+              </div>
+              <div hljs hljs-language="javascript" id="panel-tabs-js"><div class="progress">
+  <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">70% Complete</span></div>
+</div></div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xs-12">
+            <div class="box-panel selected-box-bordered">
+              <h3>Horizontal bar plain</h3>
+              <br>
+
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">70% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;"> <span class="sr-only">38% Complete</span> </div>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"> <span class="sr-only">95% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"> <span class="sr-only">50% Complete</span> </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"> <span class="sr-only">20% Complete</span> </div>
+              </div>
+              <div hljs hljs-language="javascript" id="panel-tabs-js"><div class="progress">
+  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">70% Complete</span></div>
+</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12">
+            <div class="box-panel selected-box-bordered">
+              <h3>Horizontal bar with label</h3>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary wow animated progress-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70% </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success wow animated progress-animated" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;">38%</div>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger wow animated progress-animated" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;">38%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info wow animated progress-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 58%;">58%</div>
+              </div>
+              <div hljs hljs-language="javascript" id="panel-tabs-js"><div class="progress">
+  <div class="progress-bar progress-bar-warning wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+</div></div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- BOWER -->
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script>
+$(document).on('ready',function(){
+w3IncludeHTML();
+$('#myTabs a').on('click', function() {
+$(this).tab('show');
+});
+})
+</script>
+</body>
+</html>

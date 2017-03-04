@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Clearify Theme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div w3-include-html="inc/menu.html"></div>
+      <div class="page-wrapper">
+        <div w3-include-html="inc/header.html"></div>
+        <div class="clarify-body">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <a class="active">Basic Tables</a>
+          </nav>
+<div class="row">
+        <div class="col-sm-6">
+          <div class="box-panel">
+            <h3>Basic Table</h3>
+            <p class="text-muted">Add class <code>.table</code></p>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Deshmukh</td>
+                    <td>Prohaska</td>
+                    <td>@Genelia</td>
+                    <td><span class="label label-danger">admin</span> </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Deshmukh</td>
+                    <td>Gaylord</td>
+                    <td>@Ritesh</td>
+                    <td><span class="label label-info">member</span> </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sanghani</td>
+                    <td>Gusikowski</td>
+                    <td>@Govinda</td>
+                    <td><span class="label label-warning">developer</span> </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Roshan</td>
+                    <td>Rogahn</td>
+                    <td>@Hritik</td>
+                    <td><span class="label label-success">supporter</span> </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Joshi</td>
+                    <td>Hickle</td>
+                    <td>@Maruti</td>
+                    <td><span class="label label-info">member</span> </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Nigam</td>
+                    <td>Eichmann</td>
+                    <td>@Sonu</td>
+                    <td><span class="label label-success">supporter</span> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="box-panel">
+            <h3>Table Hover</h3>
+            <p class="text-muted">Add class <code>.table-hover</code></p>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Products</th>
+                    <th>Popularity</th>
+                    <th>Sales</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Milk Powder</td>
+                    <td><span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#13dafe&quot;], &quot;stroke&quot;:[&quot;#13dafe&quot;]}" data-height="40" style="display: none;">0,-3,-2,-4,-5,-4,-3,-2,-5,-1</span><svg class="peity" height="40" width="120"><polygon fill="#13dafe" points="0 0.5 0 0.5 13.333333333333334 23.9 26.666666666666668 16.1 40 31.7 53.333333333333336 39.5 66.66666666666667 31.7 80 23.9 93.33333333333334 16.1 106.66666666666667 39.5 120 8.299999999999997 120 0.5"></polygon><polyline fill="none" points="0 0.5 13.333333333333334 23.9 26.666666666666668 16.1 40 31.7 53.333333333333336 39.5 66.66666666666667 31.7 80 23.9 93.33333333333334 16.1 106.66666666666667 39.5 120 8.299999999999997" stroke="#13dafe" stroke-width="1" stroke-linecap="square"></polyline></svg> </td>
+                    <td><span class="text-danger text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 28.76%</span> </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Air Conditioner</td>
+                    <td><span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#13dafe&quot;], &quot;stroke&quot;:[&quot;#13dafe&quot;]}" data-height="40" style="display: none;">0,-1,-1,-2,-3,-1,-2,-3,-1,-2</span><svg class="peity" height="40" width="120"><polygon fill="#13dafe" points="0 0.5 0 0.5 13.333333333333334 13.5 26.666666666666668 13.5 40 26.5 53.333333333333336 39.5 66.66666666666667 13.5 80 26.5 93.33333333333334 39.5 106.66666666666667 13.5 120 26.5 120 0.5"></polygon><polyline fill="none" points="0 0.5 13.333333333333334 13.5 26.666666666666668 13.5 40 26.5 53.333333333333336 39.5 66.66666666666667 13.5 80 26.5 93.33333333333334 39.5 106.66666666666667 13.5 120 26.5" stroke="#13dafe" stroke-width="1" stroke-linecap="square"></polyline></svg> </td>
+                    <td><span class="text-warning text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 8.55%</span> </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>RC Cars</td>
+                    <td><span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#13dafe&quot;], &quot;stroke&quot;:[&quot;#13dafe&quot;]}" data-height="40" style="display: none;">0,3,6,1,2,4,6,3,2,1</span><svg class="peity" height="40" width="120"><polygon fill="#13dafe" points="0 39.5 0 39.5 13.333333333333334 20 26.666666666666668 0.5 40 33 53.333333333333336 26.5 66.66666666666667 13.5 80 0.5 93.33333333333334 20 106.66666666666667 26.5 120 33 120 39.5"></polygon><polyline fill="none" points="0 39.5 13.333333333333334 20 26.666666666666668 0.5 40 33 53.333333333333336 26.5 66.66666666666667 13.5 80 0.5 93.33333333333334 20 106.66666666666667 26.5 120 33" stroke="#13dafe" stroke-width="1" stroke-linecap="square"></polyline></svg> </td>
+                    <td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 58.56%</span> </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Down Coat</td>
+                    <td><span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#13dafe&quot;], &quot;stroke&quot;:[&quot;#13dafe&quot;]}" data-height="40" style="display: none;">0,3,6,4,5,4,7,3,4,2</span><svg class="peity" height="40" width="120"><polygon fill="#13dafe" points="0 39.5 0 39.5 13.333333333333334 22.78571428571429 26.666666666666668 6.0714285714285765 40 17.214285714285715 53.333333333333336 11.642857142857142 66.66666666666667 17.214285714285715 80 0.5 93.33333333333334 22.78571428571429 106.66666666666667 17.214285714285715 120 28.357142857142858 120 39.5"></polygon><polyline fill="none" points="0 39.5 13.333333333333334 22.78571428571429 26.666666666666668 6.0714285714285765 40 17.214285714285715 53.333333333333336 11.642857142857142 66.66666666666667 17.214285714285715 80 0.5 93.33333333333334 22.78571428571429 106.66666666666667 17.214285714285715 120 28.357142857142858" stroke="#13dafe" stroke-width="1" stroke-linecap="square"></polyline></svg> </td>
+                    <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-panel">
+            <h3>Compacted Table</h3>
+            <p class="text-muted m-b-20">Add<code>.table-bordered</code>for borders on all sides of the
+              table and cells.</p>
+            <div class="table-responsive">
+              <table class="table table-compacted">
+                <thead>
+                  <tr>
+                    <th>Task</th>
+                    <th>Progress</th>
+                    <th>Deadline</th>
+                    <th class="text-nowrap">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lunar probe project</td>
+                    <td>Done</td>
+                    <td>May 15, 2015</td>
+                    <td class="text-nowrap"><a href="basic-table.html#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a href="basic-table.html#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a> </td>
+                  </tr>
+                  <tr>
+                    <td>Dream successful plan</td>
+                    <td>Ready</td>
+                    <td>July 1, 2015</td>
+                    <td class="text-nowrap"><a href="basic-table.html#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a href="basic-table.html#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a> </td>
+                  </tr>
+                  <tr>
+                    <td>Office automatization</td>
+                    <td>To Do</td>
+                    <td>Apr 12, 2015</td>
+                    <td class="text-nowrap"><a href="basic-table.html#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a href="basic-table.html#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a> </td>
+                  </tr>
+                  <tr>
+                    <td>The sun climbing plan</td>
+                    <td>Doing</td>
+                    <td>Aug 9, 2015</td>
+                    <td class="text-nowrap"><a href="basic-table.html#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a href="basic-table.html#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a> </td>
+                  </tr>
+                  <tr>
+                    <td>Open strategy</td>
+                    <td>To Review</td>
+                    <td>Apr 2, 2015</td>
+                    <td class="text-nowrap"><a href="basic-table.html#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a href="basic-table.html#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a> </td>
+                  </tr>
+                  <tr>
+                    <td>Tantas earum numeris</td>
+                    <td>Backlog</td>
+                    <td>July 11, 2015</td>
+                    <td class="text-nowrap"><a href="basic-table.html#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a href="basic-table.html#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- BOWER -->
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/peity/jquery.peity.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/peity-data.js"></script>
+
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script>
+$(document).on('ready',function(){
+w3IncludeHTML();
+})
+</script>
+</body>
+</html>

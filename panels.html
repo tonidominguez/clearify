@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+		<link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+		<link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/theme.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<title>Clearify Theme</title>
+	</head>
+<body>
+<div class="wrapper">
+	<div w3-include-html="inc/menu.html"></div>
+	<div class="page-wrapper">
+		<div w3-include-html="inc/header.html"></div>
+		<div class="clarify-body">
+		<nav class="breadcrumb">
+			<a href="index.html">Home</a>
+			<a class="active">Panels</a>
+		</nav>
+		<div class="row">
+
+		<div class="col-md-6">
+
+		  <div class="box-panel">
+
+			<h4>Normal Well</h4>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="box-panel selected-box-bordered">
+
+			<h4>Normal Well</h4>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel panel-default">
+
+			<div class="panel-heading"> Default Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel panel-primary">
+
+			<div class="panel-heading"> Primary Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel panel-success">
+
+			<div class="panel-heading"> Success Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel panel-info">
+
+			<div class="panel-heading"> Info Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel panel-warning">
+
+			<div class="panel-heading"> Warning Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel panel-danger">
+
+			<div class="panel-heading"> Danger Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel full-panel-info">
+
+			<div class="panel-heading"> Info Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel full-panel-success">
+
+			<div class="panel-heading"> Primary Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<div class="col-md-6">
+
+		  <div class="panel full-panel-warning">
+
+			<div class="panel-heading"> Warning Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+	  
+
+		<div class="col-md-6">
+
+		  <div class="panel full-panel-danger">
+
+			<div class="panel-heading"> Danger Panel
+
+			  <div class="pull-right"><a href="panels-wells.html#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="panels-wells.html#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+
+			</div>
+
+			<div class="panel-wrapper collapse in" aria-expanded="true">
+
+			  <div class="panel-body">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+
+			  </div>
+
+			  <div class="panel-footer"> Panel Footer </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+	  </div>
+
+	  
+
+		</div>
+	</div>
+</div>
+<!-- BOWER -->
+
+		<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
+		<!-- APP -->
+		<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+
+		<!-- APP -->
+		<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<script>
+			$(document).on('ready',function(){
+				w3IncludeHTML();	
+			})
+		</script>
+
+</body>
+</html>

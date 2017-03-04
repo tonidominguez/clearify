@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Clearify Theme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div w3-include-html="inc/menu.html"></div>
+      <div class="page-wrapper">
+        <div w3-include-html="inc/header.html"></div>
+        <div class="clarify-body">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <a class="active">Tabs</a>
+          </nav>
+          <h2>jQuery</h2>
+          <div class="tab-panel box-panel">
+            <ul class="nav nav-tabs" id="myTabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#opcion-1" class="no-action" aria-controls="opcion-1" role="tab" data-toggle="tab">Opción 1</a>
+              </li>
+              <li role="presentation">
+                <a href="#opcion-2" class="no-action" aria-controls="opcion-2" role="tab" data-toggle="tab">Opción 2</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="opcion-1">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="box-panel selected-box-bordered">
+                      Loremipsum
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="opcion-2">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="box-panel selected-box-bordered">
+                      Loremipsum
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="box-panel">
+                      Loremipsum
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <uib-tabset class="box-panel tab-panel hidden-xs" ng-show="showExamples">
+          <uib-tab heading="HTML">
+          <div class="tpl-code">
+            <button type="button" class="btn btn-default btn-xs btn-clipboard pull-right"data-clipboard-target="#panel-tabs-html" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Copiado!">
+            <i class="fa fa-clipboard"></i>
+            </button>
+            <!-- EJEMPLO - NO TABULAR -->
+            <div hljs hljs-language="html" id="panel-tabs-html"><div class="tab-panel box-panel">
+              <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#opcion-1" class="no-action" aria-controls="opcion-1" role="tab" data-toggle="tab">Opción 1</a>
+                </li>
+                <li role="presentation">
+                  <a href="#opcion-2" class="no-action" aria-controls="opcion-2" role="tab" data-toggle="tab">Opción 2</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="opcion-1">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="box-panel selected-box-bordered">
+                        Loremipsum
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="opcion-2">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="box-panel selected-box-bordered">
+                        Loremipsum
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="box-panel">
+                        Loremipsum
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+          </uib-tab>
+          <uib-tab heading="JavaScript">
+          <div class="tpl-code">
+            <button type="button" class="btn btn-default btn-xs btn-clipboard pull-right"data-clipboard-target="#panel-tabs-js" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Copiado!">
+            <i class="fa fa-clipboard"></i>
+            </button>
+            <!-- EJEMPLO - NO TABULAR -->
+            <div hljs hljs-language="javascript" id="panel-tabs-js">$('#myTabs a').on('click', function() {
+              $(this).tab('show');
+            });</div>
+          </div>
+          </uib-tab>
+          </uib-tabset>
+          <h2>AngularJS</h2>
+          <div class="tab-panel">
+            <uib-tabset>
+            <uib-tab heading="Opción 1">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="box-panel selected-box-bordered">
+                  Loremipsum
+                </div>
+              </div>
+            </div>
+            </uib-tab>
+            <uib-tab heading="Opción 2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box-panel selected-box-bordered">
+                  Loremipsum
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box-panel">
+                  Loremipsum
+                </div>
+              </div>
+            </div>
+            </uib-tab>
+            </uib-tabset>
+          </div>
+          <!-- EJEMPLO - NO TABULAR -->
+          <div hljs hljs-language="html" id="panel-tabs-html"><div class="tab-panel">
+  <uib-tabset>
+    <uib-tab heading="Opción 1">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box-panel selected-box-bordered">
+            Loremipsum
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Opción 2">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box-panel selected-box-bordered">
+            Loremipsum
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box-panel">
+            Loremipsum
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+  </uib-tabset>
+</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- BOWER -->
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script>
+$(document).on('ready',function(){
+w3IncludeHTML();
+$('#myTabs a').on('click', function() {
+$(this).tab('show');
+});
+})
+</script>
+</body>
+</html>

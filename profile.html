@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Clearify Theme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div w3-include-html="inc/menu.html"></div>
+      <div class="page-wrapper">
+        <div w3-include-html="inc/header.html"></div>
+        <div class="clarify-body">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <a class="active">Profile</a>
+          </nav>
+
+<div class="row">
+          <div class="col-md-4 col-xs-12">
+           <div class="bg-product box-panel">
+            <div class="text-center text-white">
+              <div class="overlay-box">
+                <div class="user-content"> <a href="javascript:void(0)"><img src="img/users/genu-sm.jpg" class="img-circle" alt="img"></a>
+                  <h4 class="text-white">User Name</h4>
+                  <h5 class="text-white">info@myadmin.com</h5>
+                </div>
+              </div>
+            </div>
+            <div class="user-btm-box">
+              <div class="col-md-4 col-sm-4 text-center">
+                <p class="text-purple"><i class="fa-2x ti-facebook"></i></p>
+                <h4 class="text-white">258</h4>
+              </div>
+              <div class="col-md-4 col-sm-4 text-center">
+                <p class="text-blue"><i class="fa-2x ti-twitter"></i></p>
+                <h4 class="text-white">125</h4>
+              </div>
+              <div class="col-md-4 col-sm-4 text-center">
+                <p class="text-danger"><i class="fa-2x ti-dribbble"></i></p>
+                <h4 class="text-white">556</h4>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <div class="box-panel tab-panel">
+              <ul class="nav nav-tabs tabs">
+                
+                <li class="tab active"><a href="profile.html#profile" data-toggle="tab"> <span class="visible-xs"><i class="fa fa-user"></i></span> <span class="hidden-xs">Profile</span> </a> </li>
+                <li class="tab"><a href="profile.html#messages" data-toggle="tab" aria-expanded="true"> <span class="visible-xs"><i class="fa fa-envelope-o"></i></span> <span class="hidden-xs">Messages</span> </a> </li>
+                <li class="tab"><a href="profile.html#settings" data-toggle="tab" aria-expanded="false"> <span class="visible-xs"><i class="fa fa-cog"></i></span> <span class="hidden-xs">Settings</span> </a> </li>
+              </ul>
+              <div class="tab-content">
+                
+                <div class="tab-pane active" id="profile">
+                  <div class="row">
+                    <div class="col-md-6 col-xs-6 "> <strong>Full Name</strong> <br>
+                      <p class="text-muted"><small>Johnathan Deo</small></p>
+                    </div>
+                    <div class="col-md-6 col-xs-6 "> <strong>Mobile</strong> <br>
+                      <p class="text-muted"><small>(123) 456 7890</small></p>
+                    </div>
+                    <div class="col-md-6 col-xs-6 "> <strong>Email</strong> <br>
+                      <p class="text-muted"><small>johnathan@admin.com</small></p>
+                    </div>
+                    <div class="col-md-6 col-xs-6"> <strong>Location</strong> <br>
+                      <p class="text-muted"><small>London</small></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries </p>
+                  <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <h4 class="font-bold">Skill Set</h4>
+                  <hr>
+                  <h5>Wordpress <span class="pull-right">80%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;"> <span class="sr-only">50% Complete</span> </div>
+                  </div>
+                  <h5>HTML 5 <span class="pull-right">90%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;"> <span class="sr-only">50% Complete</span> </div>
+                  </div>
+                  <h5>jQuery <span class="pull-right">50%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"> <span class="sr-only">50% Complete</span> </div>
+                  </div>
+                  <h5>Photoshop <span class="pull-right">70%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;"> <span class="sr-only">50% Complete</span> </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="messages">
+                  <div class="steamline">
+                    <div class="sl-item">
+                      <div class="pull-left"> <img src="img/users/genu.jpg" alt="user" class="img-circle" width="60px" style="margin:10px;"> </div>
+                      <div class="sl-right">
+                        <div class="m-l-40"> <a href="profile.html#" class="text-info">John Doe</a> <span class="sl-date">5 minutes ago</span>
+                          <div class="m-t-20 row">
+                            <div class="col-md-2 col-xs-12"><img src="img/slider1.jpg" alt="user" class="img-responsive"></div>
+                            <div class="col-md-9 col-xs-12">
+                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.  Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa</p>
+                              <a href="profile.html#" class="btn btn-success"> Design weblayout</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="sl-item">
+                      <div class="pull-left"> <img src="img/users/sonu.jpg" alt="user" class="img-circle" width="60px" style="margin:10px;"> </div>
+                      <div class="sl-right">
+                        <div class="m-l-40"><a href="profile.html#" class="text-info">John Doe</a> <span class="sl-date">5 minutes ago</span>
+                          <p>assign a new task <a href="profile.html#"> Design weblayout</a></p>
+                          <div class="m-t-20 row"><img src="img/slider1.jpg" alt="user" class="col-md-3 col-xs-12"> <img src="img/slider2.jpg" alt="user" class="col-md-3 col-xs-12"> <img src="img/slider3.jpg" alt="user" class="col-md-3 col-xs-12"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="sl-item">
+                      <div class="pull-left"> <img src="img/users/ritesh.jpg" alt="user" class="img-circle" width="60px" style="margin:10px;"> </div>
+                      <div class="sl-right">
+                        <div class="m-l-40"><a href="profile.html#" class="text-info">John Doe</a> <span class="sl-date">5 minutes ago</span>
+                          <p class="m-t-10"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.  Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper </p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="sl-item">
+                      <div class="pull-left"> <img src="img/users/govinda.jpg" alt="user" class="img-circle" width="60px" style="margin:10px;"> </div>
+                      <div class="sl-right">
+                        <div class="m-l-40"><a href="profile.html#" class="text-info">John Doe</a> <span class="sl-date">5 minutes ago</span>
+                          <p>assign a new task <a href="profile.html#"> Design weblayout</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="settings">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="col-md-12">Full Name</label>
+                      <div class="col-md-12">
+                        <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="example-email" class="col-md-12">Email</label>
+                      <div class="col-md-12">
+                        <input type="email" placeholder="johnathan@admin.com" class="form-control form-control-line" name="example-email" id="example-email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-12">Password</label>
+                      <div class="col-md-12">
+                        <input type="password" value="password" class="form-control form-control-line">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-12">Phone No</label>
+                      <div class="col-md-12">
+                        <input type="text" placeholder="123 456 7890" class="form-control form-control-line">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-12">Message</label>
+                      <div class="col-md-12">
+                        <textarea rows="5" class="form-control form-control-line"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-12">Select Country</label>
+                      <div class="col-sm-12">
+                        <select class="form-control form-control-line">
+                          <option>London</option>
+                          <option>India</option>
+                          <option>Usa</option>
+                          <option>Canada</option>
+                          <option>Thailand</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <button class="btn btn-success">Update Profile</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- BOWER -->
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/peity/jquery.peity.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/peity-data.js"></script>
+
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script>
+$(document).on('ready',function(){
+w3IncludeHTML();
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Clearify Theme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div w3-include-html="inc/menu.html"></div>
+      <div class="page-wrapper">
+        <div w3-include-html="inc/header.html"></div>
+        <div class="clarify-body">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <a class="active">Peity Chart</a>
+          </nav>
+          <div class="row">
+	        <div class="col-md-12 col-lg-12 col-xs-12">
+	          <div class="box-panel">
+	            <h3>Pie Chart</h3>
+	            <p class="text-muted m-b-30">Add code in span <code> class="pie"</code> plus for colors <code>data-peity='{ "fill": ["#13dafe", "#f2f2f2"]}'</code></p>
+	            <div class="row">
+	              <div class="col-sm-2 col-xs-6"><span class="pie" data-peity="{ 'fill': ['#13dafe', '#f2f2f2']}" style="display: none;">1/5</span>
+	                <div>Data : 1/5</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="pie" data-peity="{ 'fill': ['#6164c1', '#f2f2f2']}" style="display: none;">226/360</span>
+	                <div>Data : 226/360</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="pie" data-peity="{ 'fill': ['#f96262', '#f2f2f2']}" style="display: none;">0.52/1.561</span>
+	                <div>Data : 0.52/1.561</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="pie" data-peity="{ 'fill': ['#99d683', '#f2f2f2']}" style="display: none;">1,4</span>
+	                <div>Data : 1,4</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="pie" data-peity="{ 'fill': ['#ffca4a', '#f2f2f2']}" style="display: none;">226,134</span>
+	                <div>Data : 226,134</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="pie" data-peity="{ 'fill': ['#4c5667', '#f2f2f2']}" style="display: none;">0.52,1.041</span>
+	                <div>Data : 0.52, 1.041</div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="row">
+	        <div class="col-sm-12">
+	          <div class="box-panel">
+	            <h3>Donut Chart</h3>
+	            <p class="text-muted m-b-30">Just add in span<code> class="donut"</code></p>
+	            <div class="row">
+	              <div class="col-sm-2 col-xs-6"><span class="donut" data-peity="{ 'fill': ['#13dafe', '#f2f2f2']}" style="display: none;">1/5</span>
+	                <div>Data : 1/5</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="donut" data-peity="{ 'fill': ['#6164c1', '#f2f2f2']}" style="display: none;">226/360</span>
+	                <div>Data : 226/360</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="donut" data-peity="{ 'fill': ['#f96262', '#f2f2f2'], 'innerRadius': 16, 'radius': 32 }" style="display: none;">0.52/1.561</span>
+	                <div>Data : 0.52/1.561</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="donut" data-peity="{ 'fill': ['#99d683', '#f2f2f2'], 'innerRadius': 20, 'radius': 32 }" style="display: none;">1,4</span>
+	                <div>Data : 1,4</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="donut" data-peity="{ 'fill': ['#ffca4a', '#f2f2f2'], 'innerRadius': 23, 'radius': 32 }" style="display: none;">226,134</span>
+	                <div>Data : 226,134</div>
+	              </div>
+	              <div class="col-sm-2 col-xs-6"><span class="donut" data-peity="{ 'fill': ['#4c5667', '#f2f2f2'], 'innerRadius': 8, 'radius': 32 }" style="display: none;">1,2,3,2,2</span>
+	                <div>Data : 1,2,3,2,2</div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="row">
+        <div class="col-lg-12">
+          <div class="box-panel">
+            <h3> Bar Chart</h3>
+            <p class="text-muted m-b-30">Add class in span<code> peity-bar</code></p>
+            <div class="row">
+              <div class="col-sm-4 col-xs-6"><span class="peity-bar" data-peity="{ 'fill': ['#6164c1', '#13dafe']}" data-width="100%" data-height="60" style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span></div>
+              <div class="col-sm-4 col-xs-6"><span class="peity-bar" data-peity="{ 'fill': ['#f96262', '#f2f2f2']}" data-width="100%" data-height="60" style="display: none;">6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span></div>
+              <div class="col-sm-4 col-xs-6"><span class="peity-bar" data-peity="{ 'fill': ['#4c5667', '#99d683']}" data-width="100%" data-height="60" style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="box-panel">
+            <h3>Line Chart</h3>
+            <p class="text-muted m-b-30">Add class in span<code> peity-line</code></p>
+            <div class="row">
+              <div class="col-sm-4 col-xs-6"><span class="peity-line" data-width="100%" data-height="60" style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span></div>
+              <div class="col-sm-4 col-xs-6"><span class="peity-line" data-width="100%" data-height="60" style="display: none;">6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span></div>
+              <div class="col-sm-4 col-xs-6"><span class="peity-line" data-width="100%" data-height="60" style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- BOWER -->
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/peity/jquery.peity.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/peity-data.js"></script>
+
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+<!-- APP -->
+<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script>
+$(document).on('ready',function(){
+w3IncludeHTML();
+})
+</script>
+</body>
+</html>

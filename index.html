@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+		<link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+		<link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/theme.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<title>Clearify Theme</title>
+	</head>
+<body>
+<div class="wrapper">
+	<div w3-include-html="inc/menu.html"></div>
+	<div class="page-wrapper">
+		<div w3-include-html="inc/header.html"></div>
+		<div class="clarify-body">
+		<nav class="breadcrumb">
+			<a href="#">Home</a>
+			<a class="active">Dashboard</a>
+		</nav>
+			<div class="row">
+				
+				<div class="col-md-4">
+				  <div class="box-panel selected-box-bordered">
+					<div class="bar-widget">
+					  <div class="table-box">
+						<div class="cell text-left">
+						  <div id="sparkline2"><canvas width="50" height="45" style="display: inline-block; width: 50px; height: 45px; vertical-align: top;"></canvas></div>
+						</div>
+						<div class="cell text-right">
+						  <h2 class="m-t-0 m-b-5 font-light">18% Total</h2>
+						  <h5 class="text-muted m-b-0 m-t-0">Visitors</h5>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="box-panel selected-box-bordered">
+					<div class="bar-widget">
+					  <div class="table-box">
+						<div class="cell text-left">
+						  <div id="sparkline4"><canvas width="120" height="45" style="display: inline-block; width: 120px; height: 90px; vertical-align: top;"></canvas></div>
+						</div>
+						<div class="cell text-right">
+						  <h2 class="m-t-0 m-b-5 font-light counter">2547</h2>
+						  <h5 class="text-muted m-b-0 m-t-0">clicks</h5>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+					<div class="box-panel selected-box-bordered">
+						<div class="bar-widget">
+						  <div class="table-box">
+							<div class="cell text-left">
+							  <div id="sparkline1"><canvas width="117" height="45" style="display: inline-block; width: 117px; height: 45px; vertical-align: top;"></canvas></div>
+							</div>
+							<div class="cell text-right">
+							  <h2 class="m-t-0 m-b-5 font-light counter">3506</h2>
+							  <h5 class="text-muted m-b-0 m-t-0">Sales</h5>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="row">
+        <div class="col-md-3 col-xs-12 col-sm-6">
+          <div class="box-panel selected-box-bordered">
+            <div class="text-left"><span class="badge badge-warning pull-right m-t-20">Daily</span>
+              <h2 class="m-b-0 m-t-0 counter">150</h2>
+              <p class="text-muted m-b-25">Increase Sales</p>
+              <div class="chart-box">
+                <div id="sparkline7"><canvas width="252" height="50" style="display: inline-block; width: 252px; height: 50px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+          <div class="box-panel selected-box-bordered">
+            <div class="text-left"><span class="badge badge-success pull-right m-t-20">Weekly</span>
+              <h2 class="m-b-0 m-t-0 counter">200</h2>
+              <p class="text-muted m-b-25">Increase Sales</p>
+              <div class="chart-box">
+                <div id="sparkline8"><canvas width="252" height="50" style="display: inline-block; width: 252px; height: 50px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+          <div class="box-panel selected-box-bordered">
+            <div class="text-left"><span class="badge badge-info pull-right m-t-20">Monthly</span>
+              <h2 class="m-b-0 m-t-0 counter">220</h2>
+              <p class="text-muted m-b-25">Increase Sales</p>
+              <div class="chart-box">
+                <div id="sparkline9"><canvas width="252" height="50" style="display: inline-block; width: 252px; height: 50px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+          <div class="box-panel selected-box-bordered">
+            <div class="text-left"><span class="badge badge-danger pull-right m-t-20">Yearly</span>
+              <h2 class="m-b-0 m-t-0 counter">120</h2>
+              <p class="text-muted m-b-25">Increase Sales</p>
+              <div class="chart-box">
+                <div id="sparkline10"><canvas width="252" height="50" style="display: inline-block; width: 252px; height: 50px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box-panel-group">
+						<div class="box-panel-header">
+							<h3>Card #1</h3>
+						</div>
+						<div class="box-panel">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat explicabo porro delectus dolor, illum nemo modi, optio soluta, quod libero. Odio, ad laboriosam quibusdam? Tempore aliquam ratione reprehenderit quia!
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box-panel-group">
+						<div class="box-panel-header">
+							<h3>Card #2</h3>
+						</div>
+						<div class="box-panel">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat explicabo porro delectus dolor, illum nemo modi, optio soluta, quod libero. Odio, ad laboriosam quibusdam? Tempore aliquam ratione reprehenderit quia!
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-md-6">
+				  <div class="box-panel">
+					<div class="col-md-3 col-sm-3">
+					  <h4 class="font-light">Total<br>
+						Ammount</h4>
+					  <p><b>1.20 USD</b></p>
+					</div>
+					<div class="col-md-9 col-sm-9">
+					  <div id="sparkline5"><canvas width="301" height="160" style="display: inline-block; width: 301px; height: 160px; vertical-align: top;"></canvas></div>
+					</div>
+					<div class="clearfix"></div>
+				  </div>
+				</div>
+				<div class="col-md-6">
+				  <div class="box-panel">
+					<div class="col-md-5 col-sm-4">
+					  <h4 class="font-light">Report<br>
+						Sales</h4>
+					  <p><b>1,20,000 <br>
+						USD</b></p>
+					</div>
+					<div class="col-md-7 col-sm-8">
+					  <div id="sparkline3" class="text-center"><canvas width="91" height="164" style="display: inline-block; width: 91px; height: 164px; vertical-align: top;"></canvas></div>
+					</div>
+					<div class="clearfix"></div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-panel">
+						<h6>Title</h6>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat explicabo porro delectus dolor, illum nemo modi, optio soluta, quod libero. Odio, ad laboriosam quibusdam? Tempore aliquam ratione reprehenderit!
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box-panel">
+						<h6>Title</h6>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quaerat explicabo porro delectus dolor, illum nemo modi, optio soluta, quod libero. Odio, ad laboriosam quibusdam? Tempore aliquam ratione reprehenderit!
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box-panel">
+						<div class="caption">
+							<h4>Start</h4>
+							<p>Box example to download and edit.</p>
+							<div>
+								<a href="examples/plantilla-inicial.rar" class="btn btn-primary pull-right" target="_blank"><i class="ti ti-download"></i></a>
+								<a href="examples/plantilla-inicial.html" class="btn btn-primary" target="_blank">View</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+        <div class="col-md-4 col-lg-4 col-xs-12">
+          <div class="box-panel">
+            <h3>Browser Stats</h3>
+            <ul class="list-unordered">
+              <li>Google Chrome <span class="pull-right label-danger label">21.8%</span></li>
+              <li>Mozila Firefox <span class="pull-right label-purple label">21.8%</span></li>
+              <li>Apple Safari <span class="pull-right label-success label">21.8%</span></li>
+              <li>Internet Explorer <span class="pull-right label-info label">21.8%</span></li>
+              <li>Opera mini <span class="pull-right label-warning label">21.8%</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+          <div class="box-panel">
+            <h3><i class="fa fa-map-marker"></i> Toronto, Canada</h3>
+            <div class="weather-box">
+              <div class="weather-top row">
+              <div class="today_crnt text-center col-md-6 col-xs-12"><h1><i class="wi wi-day-cloudy-high text-warning"></i><span>32<sup>°C</sup></span></h1></div>
+                <div class="col-md-6 col-xs-12"><h2 class="text-center">Monday <br>
+                  <small>1th May 2016</small></h2>
+                </div>
+              </div>
+             
+              <div class="row">
+
+                  <div class="col-xs-3 col-sm-3"><span>12:00</span><i class="wi wi-day-cloudy"></i><span>32<sup>°F</sup></span></div>
+                  <div class="col-xs-3 col-sm-3"><span>13:00</span><i class="wi wi-day-rain"></i><span>34<sup>°F</sup></span></div>
+                  <div class="col-xs-3 col-sm-3"><span>14:00</span><i class="wi wi-day-fog"></i><span>35<sup>°F</sup></span></div>
+                  <div class="col-xs-3 col-sm-3"><span>15:00</span><i class="wi wi-day-cloudy"></i><span>34<sup>°F</sup></span></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-6">
+          <div class="box-panel bg-product text-white">
+            <div id="myCarousel" class="carousel vcarousel slide vertical p-20">
+              <!-- Carousel items -->
+              <div class="carousel-inner ">
+                <div class="item active"> <i class="fa fa-calendar fa-2x text-white"></i>
+                  <p class="text-white">14th Feb</p>
+                  <h3 class="text-white">Now Get <span class="font-bold">50% Off</span><br>
+                    on buy</h3>
+                  <button class="btn btn-white-ghost   m-t-15">Love it!</button>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+</div>
+		</div>
+	</div>
+</div>
+<!-- BOWER -->
+
+		<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
+		<!-- APP -->
+		<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+
+		<!-- APP -->
+		<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<script>
+			$(document).on('ready',function(){
+				w3IncludeHTML();	
+			})
+		</script>
+
+</body>
+</html>

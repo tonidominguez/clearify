@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Clearify Theme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div w3-include-html="inc/menu.html"></div>
+      <div class="page-wrapper">
+        <div w3-include-html="inc/header.html"></div>
+        <div class="clarify-body">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <a class="active">Modals</a>
+          </nav>
+          <h1>Live Demos</h1>
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="box-panel">
+                <h2>Simple Demo</h2>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Launch demo modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        Hide when guests come over scamper, or sit on the laptop for roll on the floor purring your whiskers off put butt in owner's face and fall over dead (not really but gets sypathy). Favor packaging over toy cats go for world domination hide head under blanket so no one can see. 
+                      </div>
+                      <div class="modal-footer">
+                        <p>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="box-panel">
+                <h2>Size Demo</h2>
+                <button type="button" class="btn btn-primary btn-info" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        Hide when guests come over scamper, or sit on the laptop for roll on the floor purring your whiskers off put butt in owner's face and fall over dead (not really but gets sypathy). Favor packaging over toy cats go for world domination hide head under blanket so no one can see.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Small modal -->
+                <button type="button" class="btn btn-primary btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        Hide when guests come over scamper, or sit on the laptop for roll on the floor purring your whiskers off put butt in owner's face and fall over dead (not really but gets sypathy). Favor packaging over toy cats go for world domination hide head under blanket so no one can see.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="row">
+          <div class="col-md-6">
+
+              <div class="box-panel">
+              <h2>Form Modal</h2>
+              <button type="button" class="btn btn-primary btn-lg btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal</button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="control-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="control-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         
+              </div>
+        
+          </div>
+            <div class="col-md-6">
+              <div class="box-panel">
+                <h2>Grid System Modal</h2>
+                <button type="button" class="btn btn-primary btn-lg btn-warning" data-toggle="modal" data-target="#gridSystemModal"> Launch demo modal </button>
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="gridSystemModal">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-4">.col-md-4</div>
+                          <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                          <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-9">
+                            Level 1: .col-sm-9
+                            <div class="row">
+                              <div class="col-xs-8 col-sm-6">
+                                Level 2: .col-xs-8 .col-sm-6
+                              </div>
+                              <div class="col-xs-4 col-sm-6">
+                                Level 2: .col-xs-4 .col-sm-6
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- BOWER -->
+    <script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <!-- APP -->
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+    <!-- APP -->
+    <script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+    $(document).on('ready',function(){
+      w3IncludeHTML();
+      $('#myTabs a').on('click', function() {
+        $(this).tab('show');
+      });
+    })
+    </script>
+  </body>
+</html>

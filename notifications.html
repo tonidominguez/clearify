@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="style-guide" ng-app="clearifyAdmin" ng-controller="GuideController" ng-attr-id="{{ app }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="stylesheet" type="text/css" href="js/lib/ng-table/dist/ng-table.min.css">
+		<link rel="stylesheet" type="text/css" href="js/lib/highlightjs/styles/agate.css">
+		<link rel="stylesheet" type="text/css" href="js/lib/pnotify/dist/pnotify.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/weather-icons/css/weather-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/lib/sweetalert2/dist/sweetalert2.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/theme.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<title>Clearify Theme</title>
+	</head>
+<body>
+<div class="wrapper">
+  <div w3-include-html="inc/menu.html"></div>
+  <div class="page-wrapper">
+    <div w3-include-html="inc/header.html"></div>
+    <div class="clarify-body">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <a class="active">Notifications</a>
+      </nav>
+      <div class="row">
+      
+        <div class="col-md-12">
+          <h1>Notifications & Alerts</h1>
+          <div class="alert alert-success" role="alert"><strong>Well done!</strong> You successfully read this important alert message.</div>
+          <div class="alert alert-info" role="alert"><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</div>
+          <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Better check yourself, you're not looking too good.</div>
+          <div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> Change a few things up and try submitting again.</div>
+          <h4>Dismissible alerts</h4>
+
+          <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+          </div>
+          
+        </div>
+      </div>
+      <div class="row">
+      
+        <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>A basic message </h4>
+            <button class="btn btn-danger" alt="alert" id="sa-basic">Alert</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Success Message </h4>
+            <button class="btn btn-success" alt="alert" id="sa-success">Success</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Warning message </h4>
+            <button class="btn btn-warning" alt="alert" id="sa-warning">Warning</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Info message </h4>
+            <button class="btn btn-info" alt="alert" id="sa-info">Info</button>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Question message</h4>
+            <button class="btn btn-danger" alt="alert" id="sa-question">Question</button>
+          </div>
+      </div>
+     
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Input - Text</h4>
+            <button class="btn btn-success btn-rounded" alt="alert" id="sa-text">Text</button>
+          </div>
+      </div>
+    
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Input - Email</h4>
+            <button class="btn btn-warning btn-rounded" alt="alert" id="sa-email">Email</button>
+          </div>
+      </div>
+ 
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Input - Password</h4>
+            <button class="btn btn-info btn-rounded" alt="alert" id="sa-password">Password</button>
+          </div>
+      </div>
+
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Input - Textarea</h4>
+            <button class="btn btn-danger btn-rounded" alt="alert" id="sa-textarea">Textarea</button>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Input - Select</h4>
+            <button class="btn btn-success btn-rounded" alt="alert" id="sa-select">Select</button>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Input - Radio</h4>
+            <button class="btn btn-warning btn-rounded" alt="alert" id="sa-radio">Radio</button>
+          </div>
+      </div>
+
+
+      <div class="col-md-4">
+          <div class="box-panel selected-box-bordered">
+            <h4>Input - Checkbox</h4>
+            <button class="btn btn-info btn-rounded" alt="alert" id="sa-checkbox">Checkbox</button>
+          </div>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+<!-- BOWER -->
+
+		<script type="text/javascript" charset="utf-8" src="js/lib/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular/angular.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-i18n/angular-locale_es-es.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-animate/angular-animate.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/ng-table/dist/ng-table.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/pnotify/dist/pnotify.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/clipboard/dist/clipboard.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/highlightjs/highlight.pack.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/angular-scroll/angular-scroll.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/sparkline/dist/jquery.sparkline.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+
+		<!-- APP -->
+		<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/directives.js"></script>
+
+		<!-- APP -->
+		<script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/data.js"></script>
+
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<script>
+			$(document).on('ready',function(){
+				w3IncludeHTML();
+
+        $('#sa-basic').on('click',function(){
+          swal({
+            title: 'Error!',
+            text: 'Do you want to continue',
+            type: 'error',
+            confirmButtonText: 'Cool'
+          });
+        });
+
+        $('#sa-success').on('click',function(){
+          swal({
+            title: 'Success!',
+            text: 'Perfect, you are done!',
+            type: 'success',
+            confirmButtonText: 'Done'
+          });
+        });
+
+        $('#sa-warning').on('click',function(){
+          swal({
+            title: 'Warning!',
+            text: 'Be careful my frinend!',
+            type: 'warning',
+            confirmButtonText: 'Ok'
+          });
+        });
+
+        $('#sa-info').on('click',function(){
+          swal({
+            title: 'Information',
+            text: 'Awesome day!',
+            type: 'info',
+            confirmButtonText: 'Done'
+          });
+        });
+
+        $('#sa-question').on('click',function(){
+          swal({
+            title: 'Question',
+            text: 'Who are you?',
+            type: 'question',
+            confirmButtonText: 'Answer'
+          });
+        });
+
+        $('#sa-text').on('click',function(){
+          swal({
+            title: 'Input something',
+            input: 'text',
+            showCancelButton: true,
+            inputValidator: function(value) {
+              return new Promise(function(resolve, reject) {
+                if (value) {
+                  resolve();
+                } else {
+                  reject('You need to write something!');
+                }
+              });
+            }
+          }).then(function(result) {
+            if (result) {
+              swal({
+                type: 'success',
+                html: 'You entered: ' + result
+              });
+            }
+          })
+        });
+
+        $('#sa-password').on('click',function(){
+            swal({
+              title: 'Enter your password',
+              input: 'password',
+              inputAttributes: {
+                'maxlength': 10,
+                'autocapitalize': 'off',
+                'autocorrect': 'off'
+              }
+            }).then(function(result) {
+              if (password) {
+                swal({
+                  type: 'success',
+                  html: 'Entered password: ' + password
+                });
+              }
+            })
+        });
+
+        $('#sa-email').on('click',function(){
+            swal({
+              title: 'Input email address',
+              input: 'email'
+            }).then(function(result) {
+              if (email) {
+                swal({
+                  type: 'success',
+                  html: 'Entered email: ' + email
+                });
+              }
+            })
+        });
+
+        $('#sa-textarea').on('click',function(){
+            swal({
+              input: 'textarea',
+              showCancelButton: true
+            }).then(function(result) {
+              if (result) {
+                swal(result);
+              }
+            })
+        });
+
+        $('#sa-select').on('click',function(){
+            swal({
+              title: 'Select Spain',
+              input: 'select',
+              inputOptions: {
+                'FR': 'France',
+                'ES': 'Spain',
+                'PT': 'Portugal'
+              },
+              inputPlaceholder: 'Select country',
+              showCancelButton: true,
+              inputValidator: function(value) {
+                return new Promise(function(resolve, reject) {
+                  if (value === 'ES') {
+                    resolve();
+                  } else {
+                    reject('You need to select Spain :)');
+                  }
+                });
+              }
+            }).then(function(result) {
+              if (result) {
+                swal({
+                  type: 'success',
+                  html: 'You selected: ' + result
+                });
+              }
+            })
+        });
+
+        $('#sa-radio').on('click',function(){
+            swal({
+              title: 'Select color',
+              input: 'radio',
+              inputOptions: {
+                '#ff0000': 'Red',
+                '#00ff00': 'Green',
+                '#0000ff': 'Blue'
+              },
+              inputValidator: function(result) {
+                return new Promise(function(resolve, reject) {
+                  if (result) {
+                    resolve();
+                  } else {
+                    reject('You need to select something!');
+                  }
+                });
+              }
+            }).then(function(result) {
+              if (result) {
+                swal({
+                  type: 'success',
+                  html: 'You selected: ' + result
+                });
+              }
+            })
+        });
+
+        $('#sa-checkbox').on('click',function(){
+            swal({
+              title: 'Terms and conditions',
+              input: 'checkbox',
+              inputValue: 1,
+              inputPlaceholder:
+                'I agree with the terms and conditions',
+              confirmButtonText:
+                'Continue <i class="fa fa-arrow-right></i>',
+              inputValidator: function(result) {
+                return new Promise(function(resolve, reject) {
+                  if (result) {
+                    resolve();
+                  } else {
+                    reject('You need to agree with T&C');
+                  }
+                });
+              }
+            }).then(function(result) {
+              if (result) {
+                swal({
+                  type: 'success',
+                  text: 'You agreed with T&C :)'
+                });
+              }
+            })
+        });
+
+			})
+		</script>
+
+</body>
+</html>
