@@ -4,6 +4,10 @@
 
 Clear and beautiful theme
 
+DEMO
+--------------
+http://www.targetbox.es/themes/clearify/
+
 Easy to install
 ---------------
 Copy/Paste & enjoy!
