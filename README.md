@@ -5,7 +5,11 @@
 Clear and beautiful theme
 ![Clearify Theme](http://www.targetbox.es/themes/clearify/captura.png)
 
-DEMO
+## INSTALL
+
+> bower install clearify --save
+
+## DEMO
 --------------
 http://www.targetbox.es/themes/clearify/
 
