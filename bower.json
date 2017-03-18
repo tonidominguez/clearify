@@ -1,6 +1,6 @@
 {
   "name": "theme-clearify",
-  "description": "Clearify Theme",
+  "description": "Clearify Theme - Admin template - HTML, CSS, AngularJS, Bootstrap",
   "dependencies": {
     "angular": "^1.4.9",
     "angular-ui-bootstrap-bower": "1.1.1",
